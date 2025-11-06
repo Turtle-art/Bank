@@ -4,16 +4,53 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="1398d39f-37f1-435f-b8fd-bafebe8c50e8" name="Changes" comment="" />
+    <list default="true" id="1398d39f-37f1-435f-b8fd-bafebe8c50e8" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/jarRepositories.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bank/src/main/java/com/thulasizwe/bank/controllers/AccountController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bank/src/main/java/com/thulasizwe/bank/controllers/CustomerController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bank/src/main/java/com/thulasizwe/bank/controllers/TransactionController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bank/src/main/resources/openapi/banking-api.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bank/mvnw" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bank/mvnw.cmd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bank/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/bank/pom.xml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+  <component name="GitHubPullRequestSearchHistory"><![CDATA[{
+  "lastFilter": {
+    "state": "OPEN",
+    "assignee": "Turtle-art"
+  }
+}]]></component>
+  <component name="GithubPullRequestsUISettings"><![CDATA[{
+  "selectedUrlAndAccountId": {
+    "url": "https://github.com/Turtle-art/Bank.git",
+    "accountId": "433b6b39-a9a1-4178-8c8c-afa674bb4f4f"
+  }
+}]]></component>
   <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="mavenHomeTypeForPersistence" value="WRAPPER" />
+      </MavenGeneralSettings>
+    </option>
     <option name="importingSettings">
       <MavenImportingSettings>
         <option name="vmOptionsForImporter" value="-Xmx768m -Djavax.net.ssl.trustStore=&quot;thulasizwe.sabela/.m2/cacerts&quot; -Djavax.net.ssl.trustStorePassword=changeit" />
@@ -30,9 +67,14 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    "ASKED_SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "Maven.bank [clean].executor": "Run",
+    "Maven.bank [install].executor": "Run",
+    "Maven.bank [verify].executor": "Run",
     "ModuleVcsDetector.initialDetectionPerformed": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "git-widget-placeholder": "master",
     "kotlin-language-version-configured": "true",
     "last_opened_file_path": "D:/Personal Projects/BankOpenAPI",
