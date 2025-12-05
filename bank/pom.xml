@@ -76,7 +76,7 @@
                             <goal>generate</goal>
                         </goals>
                         <configuration>
-                            <inputSpec>${project.basedir}/src/main/resources/openapi/banking-api.yml</inputSpec>
+                            <inputSpec>${project.basedir}/src/main/resources/openapi/api-contracts</inputSpec>
                             <generatorName>spring</generatorName>
                             <configurationFile>${project.basedir}/src/main/resources/openapi/config/server-config.json</configurationFile>
                             <apiPackage>com.thulasizwe.bank.api</apiPackage>
@@ -91,7 +91,7 @@
                             <goal>generate</goal>
                         </goals>
                         <configuration>
-                            <inputSpec>${project.basedir}/src/main/resources/openapi/external/payment-gateway.yml</inputSpec>
+                            <inputSpec>${project.basedir}/src/main/resources/openapi/clients/payment-gateway.yml</inputSpec>
                             <generatorName>spring</generatorName>
                             <configurationFile>${project.basedir}/src/main/resources/openapi/config/client-config.json</configurationFile>
                             <apiPackage>com.thulasizwe.bank.api</apiPackage>
