@@ -4,18 +4,15 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="1398d39f-37f1-435f-b8fd-bafebe8c50e8" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/jarRepositories.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bank/src/main/java/com/thulasizwe/bank/controllers/AccountController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bank/src/main/java/com/thulasizwe/bank/controllers/CustomerController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bank/src/main/java/com/thulasizwe/bank/controllers/TransactionController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bank/src/main/resources/openapi/banking-api.yml" afterDir="false" />
+    <list default="true" id="1398d39f-37f1-435f-b8fd-bafebe8c50e8" name="Changes" comment="Update POC">
+      <change afterPath="$PROJECT_DIR$/bank/src/main/java/com/thulasizwe/bank/http/ClientConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bank/src/main/resources/openapi/common/schemas.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bank/src/main/resources/openapi/config/client-config.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bank/src/main/resources/openapi/config/server-config.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bank/src/main/resources/openapi/external/payment-gateway.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/jarRepositories.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/jarRepositories.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bank/mvnw" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/bank/mvnw.cmd" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/bank/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/bank/pom.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -33,18 +30,18 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="GitHubPullRequestSearchHistory"><![CDATA[{
-  "lastFilter": {
-    "state": "OPEN",
-    "assignee": "Turtle-art"
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;Turtle-art&quot;
   }
-}]]></component>
-  <component name="GithubPullRequestsUISettings"><![CDATA[{
-  "selectedUrlAndAccountId": {
-    "url": "https://github.com/Turtle-art/Bank.git",
-    "accountId": "433b6b39-a9a1-4178-8c8c-afa674bb4f4f"
+}</component>
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;https://github.com/Turtle-art/Bank.git&quot;,
+    &quot;accountId&quot;: &quot;433b6b39-a9a1-4178-8c8c-afa674bb4f4f&quot;
   }
-}]]></component>
+}</component>
   <component name="MavenImportPreferences">
     <option name="generalSettings">
       <MavenGeneralSettings>
@@ -65,22 +62,29 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "ASKED_SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "Maven.bank [clean].executor": "Run",
-    "Maven.bank [install].executor": "Run",
-    "Maven.bank [verify].executor": "Run",
-    "ModuleVcsDetector.initialDetectionPerformed": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "git-widget-placeholder": "master",
-    "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "D:/Personal Projects/BankOpenAPI",
-    "settings.editor.selected.configurable": "reference.settings.project.maven.importing"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;ASKED_SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;Maven.bank [clean].executor&quot;: &quot;Run&quot;,
+    &quot;Maven.bank [install].executor&quot;: &quot;Run&quot;,
+    &quot;Maven.bank [verify].executor&quot;: &quot;Run&quot;,
+    &quot;ModuleVcsDetector.initialDetectionPerformed&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;D:/Personal Projects/BankOpenAPI&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;reference.settings.project.maven.importing&quot;
   }
-}]]></component>
+}</component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\Personal Projects\BankOpenAPI\bank\src\main\resources\openapi\external" />
+      <recent name="D:\Personal Projects\BankOpenAPI\bank\src\main\resources\openapi\config" />
+    </key>
+  </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
       <changelist id="1398d39f-37f1-435f-b8fd-bafebe8c50e8" name="Changes" comment="" />
@@ -89,6 +93,15 @@
       <option name="presentableId" value="Default" />
       <updated>1762341028120</updated>
     </task>
+    <task id="LOCAL-00001" summary="Update POC">
+      <option name="closed" value="true" />
+      <created>1762414070047</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1762414070047</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -101,5 +114,9 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Update POC" />
+    <option name="LAST_COMMIT_MESSAGE" value="Update POC" />
   </component>
 </project>

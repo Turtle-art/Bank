@@ -70,6 +70,7 @@
                 <artifactId>openapi-generator-maven-plugin</artifactId>
                 <version>7.4.0</version>
                 <executions>
+
                     <execution>
                         <id>generate-api</id>
                         <phase>generate-sources</phase>
@@ -77,55 +78,46 @@
                             <goal>generate</goal>
                         </goals>
                         <configuration>
-                            <!-- Path to your OpenAPI YAML -->
                             <inputSpec>${project.basedir}/src/main/resources/openapi/banking-api.yml</inputSpec>
-
-                            <!-- Use Spring generator -->
                             <generatorName>spring</generatorName>
 
-                            <!-- Generated package names -->
                             <apiPackage>com.thulasizwe.bank.api</apiPackage>
                             <modelPackage>com.thulasizwe.bank.dto</modelPackage>
 
-                            <!-- Configure generation options -->
                             <configOptions>
-                                <!-- Spring Boot 3 support (uses Jakarta EE) -->
                                 <useSpringBoot3>true</useSpringBoot3>
-
-                                <!-- Generate only interfaces, not implementations -->
                                 <interfaceOnly>true</interfaceOnly>
-
-                                <!-- Skip default interface implementations -->
                                 <skipDefaultInterface>true</skipDefaultInterface>
-
-                                <!-- Use tags to create separate controller interfaces -->
                                 <useTags>true</useTags>
-
-                                <!-- Enable Jakarta EE (required for Spring Boot 3) -->
-                                <useJakartaEe>true</useJakartaEe>
-
-                                <!-- Enable Bean Validation annotations -->
+                                <useJakartaEe>true</useJakartaEe>>
                                 <useBeanValidation>true</useBeanValidation>
                                 <performBeanValidation>true</performBeanValidation>
-
-                                <!-- Use Java 8 date/time types -->
                                 <dateLibrary>java8</dateLibrary>
-
-                                <!-- Documentation provider (springdoc recommended) -->
                                 <documentationProvider>springdoc</documentationProvider>
-
-                                <!-- Disable nullable wrapper (simpler DTOs) -->
                                 <openApiNullable>false</openApiNullable>
-
-                                <!-- Additional useful options -->
                                 <useBeanValidation>true</useBeanValidation>
                                 <useOptional>false</useOptional>
                             </configOptions>
-                            <!-- Skip generating tests -->
                             <generateApiTests>false</generateApiTests>
                             <generateModelTests>false</generateModelTests>
                         </configuration>
                     </execution>
+
+                    <execution>
+                        <id>generate-payment-client</id>
+                        <goals>
+                            <goal>generate</goal>
+                        </goals>
+                        <configuration>
+                            <inputSpec>${project.basedir}/src/main/resources/openapi/external/payment-gateway.yml</inputSpec>
+                            <generatorName>spring</generatorName>
+                            <configurationFile>${project.basedir}/src/main/resources/openapi/config/client-config.json</configurationFile>
+                            <apiPackage>com.thulasizwe.bank.api</apiPackage>
+                            <modelPackage>com.thulasizwe.bank.model</modelPackage>
+                            <output>${project.build.directory}/generated-sources/openapi</output>
+                        </configuration>
+                    </execution>
+
                 </executions>
             </plugin>
 
