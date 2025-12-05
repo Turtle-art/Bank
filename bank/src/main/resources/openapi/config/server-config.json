@@ -1,17 +1,19 @@
 {
+  "generatorName": "spring",
   "generateApis": true,
   "generateModels": true,
   "generateSupportingFiles": false,
   "generateApiTests": false,
   "generateModelTests": false,
-  "library": "spring-http-interface",
   "useSpringBoot3": true,
   "interfaceOnly": true,
   "skipDefaultInterface": true,
   "useTags": true,
   "useJakartaEe": true,
   "useBeanValidation": true,
+  "performBeanValidation": true,
   "dateLibrary": "java8",
+  "documentationProvider": "springdoc",
   "openApiNullable": false,
-  "hideGenerationTimestamp": true
+  "useOptional": false
 }
