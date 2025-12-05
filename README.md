@@ -6,28 +6,37 @@ This project demonstrates how to use **OpenAPI Generator** to automatically crea
 
 ## Getting Started
 
-1. **Generate Code**
+Here is a **slightly longer, still generic, and clean explanation** of the steps needed to generate code using OpenAPI:
+
+---
+
+## How Code Generation Works
+
+To generate code with OpenAPI Generator, you follow a simple workflow:
+
+1. **Define Your API Specification**
+   Start by creating an OpenAPI YAML or JSON file that describes your API.
+   This file contains your endpoints, request/response models, parameters, and any schemas your service uses.
+   It acts as the single source of truth for both backend and client code.
+
+2. **Configure OpenAPI Generator in Your `pom.xml`**
+   Add the OpenAPI Generator Maven plugin to your project.
+   In this configuration, you specify:
+
+   * The location of your spec file (`inputSpec`)
+   * What type of code you want to generate (e.g., Spring interfaces, DTOs, or clients)
+   * Output directories and generator settings
+     This ensures the generator knows how to process your specification.
+
+3. **Generate the Code**
+   Run:
 
    ```bash
    mvn clean generate-sources
    ```
 
-   This command reads OpenAPI specifications and generates:
-
-   * Server interfaces and DTOs
-   * Declarative HTTP client interfaces
-
-   Generated code is placed under `target/generated-sources/openapi/src/main/java`.
-
-2. **Run the Application**
-
-   ```bash
-   mvn spring-boot:run
-   ```
-
-3. **Access Endpoints**
-   Example endpoints include: `GET /api/accounts`, `POST /api/accounts`
-   Interactive API documentation is available at `http://localhost:8080/swagger-ui.html`.
+   The plugin reads your specification and automatically produces all the necessary classes—such as controller interfaces, models, and HTTP clients—inside the `target/generated-sources` directory.
+   These generated artifacts can then be used directly or implemented in your application.
 
 ---
 
