@@ -6,10 +6,6 @@ This project demonstrates how to use **OpenAPI Generator** to automatically crea
 
 ## Getting Started
 
-Here is a **slightly longer, still generic, and clean explanation** of the steps needed to generate code using OpenAPI:
-
----
-
 ## How Code Generation Works
 
 To generate code with OpenAPI Generator, you follow a simple workflow:
