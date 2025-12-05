@@ -246,9 +246,3 @@ This POC validates a **contract-driven workflow** for building:
 - Well-documented APIs using industry-standard OpenAPI specifications
 
 Perfect for banking, financial services, or any domain requiring strict API contracts.
-
----
-
-**License:** MIT  
-**Author:** Thulasizwe  
-**Last Updated:** December 2025
