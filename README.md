@@ -33,10 +33,6 @@ This project demonstrates how to use **OpenAPI Generator** to automatically crea
 
 ## Key Highlights
 
-### Multiple Server YAML Files
-
-If your API is organized into multiple files (e.g., `accounts.yml`, `transactions.yml`, `user.yml`), use **`inputSpecRootDirectory`** instead of `inputSpec` in the Maven plugin. This instructs OpenAPI Generator to combine all files under the directory, generating a unified set of interfaces and DTOs. This approach avoids duplication and ensures consistent API structure across modules.
-
 ### HTTP Client Generation
 
 For HTTP clients, the most important configuration is:
@@ -46,6 +42,39 @@ For HTTP clients, the most important configuration is:
 ```
 
 This ensures that the generated interfaces are annotated with `@HttpExchange` instead of `@RequestMapping`, allowing declarative HTTP calls using Spring’s HTTP Interface support.
+
+## Using `inputSpecRootDirectory` for Multiple API Contracts
+
+When your API is split across multiple YAML files, such as:
+
+```
+api-contracts/
+ ├── accounts-api.yml
+ ├── customers-api.yml
+ └── transactions-api.yml
+```
+
+you can simplify code generation by using **`inputSpecRootDirectory`** instead of `inputSpec`.
+
+### How to Configure in `pom.xml`
+
+Replace a single file specification like:
+
+```xml
+<inputSpec>${project.basedir}/src/main/resources/openapi/banking-api.yml</inputSpec>
+```
+
+with a directory-based configuration:
+
+```xml
+<inputSpecRootDirectory>${project.basedir}/src/main/resources/openapi/api-contracts</inputSpecRootDirectory>
+```
+
+This allows OpenAPI Generator to automatically combine all YAML files in the directory and generate the corresponding server interfaces and DTOs in a single run.
+
+### Multiple Executions for Clients
+
+If you are also generating **HTTP clients**, the principle of `inputSpecRootDirectory` still applies. However, since client generation typically requires slightly different configuration (for example, `"library": "spring-http-interface"`), you should define a separate execution in your Maven plugin. This ensures clients are generated correctly while still benefiting from the directory-based approach.
 
 ### Centralized JSON Configuration
 
