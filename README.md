@@ -70,5 +70,3 @@ This POC validates a **contract-driven workflow** for:
 * Building consistent and maintainable REST APIs
 * Generating type-safe HTTP clients for external services
 * Providing reliable and well-documented APIs based on industry-standard OpenAPI specifications
-
-I can create that **visual summary** next, showing server vs client generation and multi-file combination, if you want. Do you want me to make it?
